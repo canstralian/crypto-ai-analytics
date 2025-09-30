@@ -1,0 +1,31 @@
+# Example production configuration
+environment = "production"
+aws_region  = "us-west-2"
+
+# VPC Configuration
+vpc_cidr           = "10.0.0.0/16"
+availability_zones = ["us-west-2a", "us-west-2b", "us-west-2c"]
+
+# EKS Configuration
+eks_cluster_version      = "1.28"
+eks_node_instance_types  = ["t3.medium", "t3.large"]
+eks_min_size            = 3
+eks_max_size            = 20
+eks_desired_size        = 5
+
+# RDS Configuration
+rds_instance_class         = "db.t3.medium"
+rds_allocated_storage      = 200
+rds_max_allocated_storage  = 2000
+
+# Security and Backup
+enable_deletion_protection = true
+backup_retention_period   = 30
+monitoring_enabled        = true
+
+# Network Security
+allowed_cidr_blocks = ["0.0.0.0/0"]
+
+# Optional: Domain and SSL
+# domain_name = "crypto-ai-analytics.com"
+# ssl_certificate_arn = "arn:aws:acm:us-west-2:123456789012:certificate/12345678-1234-1234-1234-123456789012"

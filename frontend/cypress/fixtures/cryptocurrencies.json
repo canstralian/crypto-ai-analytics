@@ -1,0 +1,26 @@
+[
+  {
+    "id": "crypto-btc",
+    "symbol": "BTC",
+    "name": "Bitcoin",
+    "slug": "bitcoin",
+    "market_cap_rank": 1,
+    "is_active": true,
+    "metadata": {
+      "website": "https://bitcoin.org",
+      "description": "The first cryptocurrency"
+    }
+  },
+  {
+    "id": "crypto-eth", 
+    "symbol": "ETH",
+    "name": "Ethereum",
+    "slug": "ethereum",
+    "market_cap_rank": 2,
+    "is_active": true,
+    "metadata": {
+      "website": "https://ethereum.org",
+      "description": "Smart contract platform"
+    }
+  }
+]

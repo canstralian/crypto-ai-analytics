@@ -1,0 +1,27 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: crypto-ai-analytics-dev
+
+resources:
+- ../../base
+
+namePrefix: dev-
+
+patchesStrategicMerge:
+- replica-patch.yml
+- resource-patch.yml
+
+configMapGenerator:
+- name: backend-config
+  behavior: merge
+  literals:
+  - ENVIRONMENT=development
+  - LOG_LEVEL=debug
+  - CORS_ORIGINS=http://localhost:3000
+
+images:
+- name: ghcr.io/canstralian/crypto-ai-analytics/backend
+  newTag: develop
+- name: ghcr.io/canstralian/crypto-ai-analytics/frontend
+  newTag: develop
