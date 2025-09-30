@@ -1,0 +1,32 @@
+[
+  {
+    "id": "portfolio-1",
+    "name": "Main Portfolio",
+    "description": "Primary investment portfolio",
+    "type": "spot",
+    "is_default": true,
+    "is_public": false,
+    "total_value_usd": 50000.00,
+    "pnl_unrealized": 5000.00,
+    "pnl_realized": 2000.00,
+    "created_at": "2024-01-01T00:00:00Z",
+    "holdings": [
+      {
+        "symbol": "BTC",
+        "quantity": 1.5,
+        "avg_cost_usd": 30000.00,
+        "current_price_usd": 50000.00,
+        "value_usd": 75000.00,
+        "pnl_unrealized": 30000.00
+      },
+      {
+        "symbol": "ETH",
+        "quantity": 10.0,
+        "avg_cost_usd": 2000.00,
+        "current_price_usd": 3000.00,
+        "value_usd": 30000.00,
+        "pnl_unrealized": 10000.00
+      }
+    ]
+  }
+]
